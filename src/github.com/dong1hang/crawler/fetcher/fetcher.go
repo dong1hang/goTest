@@ -15,7 +15,7 @@ import (
 )
 
 func Fetch(url string) ([]byte, error) {
-	resp, err := http.Get("https://www.zhenai.com/zhenghun")
+	resp, err := http.Get(url)
 	if err != nil {
 		return nil, err
 	}
