@@ -4,13 +4,13 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/dong1hang/crawler/engine"
 	"github.com/dong1hang/crawler/model"
 )
 
 const ageRe = ``
 
-func ParseProfile(contents []byte) engine.ParseResult {
+//func ParseProfile(contents []byte) engine.ParseResult {
+func ParseProfile(contents []byte) {
 	profile := model.Profile{}
 	re := regexp.MustCompile(ageRe)
 	match := re.FindSubmatch(contents)
